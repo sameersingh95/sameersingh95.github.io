@@ -1,0 +1,19 @@
+body{
+	background-color:#437070;
+	padding-top:10px;
+	font-family:bauer;
+	color:white;
+}
+img{
+	height:80px;
+	width:100%;
+	padding-top:0px;
+}
+a:link{
+	color:white;
+	text-decoration:none;
+}
+a:visited{
+	color:white;
+	text-decoration:none;
+}
