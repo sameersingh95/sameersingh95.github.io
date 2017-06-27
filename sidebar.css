@@ -1,0 +1,148 @@
+.file {
+  visibility: hidden;
+  position: absolute;
+}
+
+/*input[type=number] {
+    -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}*/
+/*#mainNavBar{
+    //padding:60px;
+    padding-left: 320px;
+}*/
+.nav >li >a {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.navbar-toggle {
+  //padding: 5px;
+  margin: 25px 15px 25px 0;
+}
+.navbar-header{
+    height: 110px;
+}
+.navbar-inverse{
+    background-color: #4E5056;
+    //height: 130px;
+}
+.p{
+    padding: 8px;
+}
+.input-group{
+    padding: 5px;
+}
+.form-group{
+    padding: 5px;
+}
+#b{
+    font-family: Dooodleista; font-size: 25px;
+}
+#a{
+    font-family: Dooodleista; font-size: 25px;
+    color: white;
+}
+#a:hover{
+    background-color:#444;
+}
+#a:focus{
+    background-color:#444;
+}
+/*#menu-toggle:hover{
+    background-color:#444;
+}
+#menu-toggle:focus{
+    background-color:#444;
+}
+#menu-toggle img{
+    height: 80px;
+    //padding-left: px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+}*/
+
+/* Sidebar */
+#sidebar-wrapper {
+    z-index: 1;
+    position: absolute;
+    width: 0px;
+    //height: 100%;
+    overflow-y: hidden;
+    background: #2C3E50;
+    transition: all 0.2s;
+    //padding-top: 0px;
+}
+
+/* Always take up entire screen */
+#page-content-wrapper {
+    margin-top:30px; 
+    width: 100%;
+    position: absolute;
+    padding-left: 25px;
+    transition: all 0.2s;
+}
+
+
+/* Change with of sidebar from 0 to 250px */
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+    transition: all 0.2s;
+}
+
+/* Since we added left padding, we need to shrink the width by 250px */
+#wrapper.menuDisplayed #page-content-wrapper {
+    //padding-left: 250px;
+    transition: all 0.2s;
+}
+
+
+/* Sidebar styling - the entire ul list */
+.sidebar-nav {
+    padding: 10px;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 40px;
+    line-height: 40px;
+   
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar-nav li a:hover {
+    background: #16A085;
+}
+
+/*body{
+    //background-color: white;
+    color:grey;
+    font-size:21px;
+    padding-left:0px;
+}
+/*h2{
+    font-family:verdana;
+}*/
+span{
+    color:grey;
+    font-family:arial;
+}
+#i1{
+    height:150px;
+    width:250px;
+}
+a:link{
+    color:skyblue;
+}
+a:visited{
+    color:skyblue;
+}*/

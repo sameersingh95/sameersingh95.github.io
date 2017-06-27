@@ -1,0 +1,149 @@
+
+<html lang="en">
+<head>
+    <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+<div id="wrapper">
+     <nav class="navbar navbar-inverse navbar-static-top "  style="margin-bottom: 0px;">
+         <div class="container-fluid" >
+
+            <!-- Logo -->
+            <div class="navbar-header">
+               <!--<a href="#" class="navbar-brand btn" id="menu-toggle"><img src="menu.png" >
+                     </a>-->
+                
+                     <!--<a href="index.php" class="navbar-brand" style="padding-top: 5px; font-family: verdana;"><h4>HTML & CSS TUTORIALS</h4></a>-->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                     <div class="logo" ><!--style="display: inline-block; padding-left: 20px;"--><a href="index.html" class="navbar-brand" ><img src="hcs5.png" height="80px"></a></div>
+            </div>  
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                 <ul class="nav navbar-nav" >
+                     <!--<li class="active" ><a href="index.php">Home</a></li>-->
+                     <li  ><a href="breview.html" id="a" >Blog</a></li>
+                <li class="dropdown" >
+                    <a href="#" id="a" class="dropdown-toggle" data-toggle="dropdown" >Videos <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bhtmlvideo.html" id="b" >HTML</a></li>
+                            <li><a href="bcssvideo.html" id="b" >CSS</a></li>
+                            <li><a href="bootstrapvideo.html" id="b">Bootstrap</a></li>
+                        </ul>
+                    </li>
+                    <li ><a href="bsendmail.html" id="a" >Contact us</a></li>
+            </ul>
+                <!--right align -->
+                <ul class="nav navbar-nav navbar-right">
+                   <li ><a href="bsignin.html" id="a" >Login</a></li>
+                   <li class="active" style="border-bottom: 2px solid whitesmoke;"><a href="bsignup.html" id="a" >Signup</a></li>
+                </ul>
+            </div>
+            </div>
+            </nav>
+    
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li><a href="bdetails.php" >Account</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="bsendmail.php">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+            <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="well">
+                    <fieldset>
+                    <legend>Signup</legend>
+                    <form role="form" action="register.php" method="POST">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-font"></i></span>
+                            <input type="text" name="name" class="form-control" pattern="[A-Z a-z]{1,25}" required="" placeholder="Full Name">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="text" name="email" class="form-control" pattern="[A-Za-z0-9.!@#%&*-_+=:;'/?<>]{1,}[@]{1}[a-z]{1,}[.]{1}[a-z.]{1,}" required="" placeholder="Your Email">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                            <input type="text" name="mobile" class="form-control" maxlength="10" pattern="[7-9]{1}[0-9]{9}" required="" placeholder="Your Mobile">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" name="username" class="form-control" pattern="[A-Za-z0-9]{5,25}" required="" placeholder="Your Username">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" name="pass" class="form-control" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{5,15}" required="" placeholder="Password">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-duplicate"></i></span>
+                            <input type="password" name="npass" class="form-control" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{5,15}" required="" placeholder="Confirm Password">
+                        </div>
+                        <div style="padding:5px;">
+                            <button name="submit" class="btn btn-primary btn-block" style="width: 100px; padding: 5px;">Submit</button></div>
+                    </form>
+                    </fieldset>
+                </div>
+                    <div align="center">
+                    <a href="bsignin.html" >Existing User?</a>
+                </div>
+                </div>
+            <div class="col-md-4"></div>
+
+            </div>
+    </div>
+                    </div>
+                </div>
+            
+
+    <!-- Menu toggle script -->
+    <script>
+        $("#menu-toggle").click( function (e){
+            e.preventDefault();
+            $("#wrapper").toggleClass("menuDisplayed");
+        });
+         $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).fadeOut(500);
+});
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
