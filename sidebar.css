@@ -122,27 +122,3 @@ input[type=number]::-webkit-outer-spin-button {
 .sidebar-nav li a:hover {
     background: #16A085;
 }
-
-/*body{
-    //background-color: white;
-    color:grey;
-    font-size:21px;
-    padding-left:0px;
-}
-/*h2{
-    font-family:verdana;
-}*/
-span{
-    color:grey;
-    font-family:arial;
-}
-#i1{
-    height:150px;
-    width:250px;
-}
-a:link{
-    color:skyblue;
-}
-a:visited{
-    color:skyblue;
-}*/
