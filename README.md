@@ -1,4 +1,6 @@
 # PHP-Website-Using-Bootstrap
-This is the updated version of the previous website . Now using bootstrap.
-Totally revamped front end of the website.
-Enjoy
+testing website hosting 
+
+Certain commands not working
+
+<a href="https://sameersingh95.github.io/">Link to the website</a>
